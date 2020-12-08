@@ -1,4 +1,5 @@
 import React from "react";
+import { MovieControl } from "./MovieControl";
 
 export const MovieCard = ({ movie, type }) => {
   //send props to watchlist when import MovieCard (movie,type)
@@ -13,6 +14,7 @@ export const MovieCard = ({ movie, type }) => {
       ) : (
         <div className="filler-poster"></div>
       )}
+      <MovieControl type={type} movie={movie} />
     </div>
   );
 };
